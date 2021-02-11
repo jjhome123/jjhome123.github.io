@@ -2,14 +2,15 @@
     <head>
         <title>John Yee</title>
         <link rel="stylesheet" href="styles.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap" rel="stylesheet">
     </head>
 
     <body>
         <header>
             <div class="logo">
-                <h2>John Yee</h2>
-                <p>English Teacher</p>
-                <p>UX Hobbyist</p>
+                <h2>Hi, I'm <span class="first-name">John</span> <span class="last-name">Yee</span>.</h2>
+                <p>UX Hobbyist | English Teacher</p>
             </div>
 
             <nav>
@@ -22,33 +23,39 @@
             </nav>
         </header>
 
-        <banner aria-role="banner">
-            <div class="banner-msg">
-                <h1>Welcome to my website.</h1>
+        <div class="banner" aria-role="banner">
+            <div class="banner-item">
+                <h1>A collection of things I've been working on.</h1>
             </div>
-            <img alt="banner image">
-        </banner>
-
-        <div class="about">
-            <article>
-                <h2>About</h2>
-                <p>
-                    Amateur UX hobbyist based in Hyogo Prefecture, Japan.
-                    Hobbies include hiking, teaching English, snowboarding, programming, and eating.
-                </p>
-            </article>
-            <img src="" alt="john picture">
+            <img class="banner-item" src="media/hand-drawn-web-developers/banner-image.jpg" alt="banner image" width="50%">
         </div>
+
+        <article class="about">
+            <div  class="about-content">
+                <div class="subheading">
+                    <h2>&lt;about&gt;</h2>
+                    <div class="white"></div>
+                </div>
+                <div>
+                    <p>Amateur UX hobbyist based in Hyogo Prefecture, Japan.</p>
+                    <p>Hobbies include hiking, teaching English, programming, and eating.</p>
+                </div>
+            </div>
+            <img src="media/hyogo.png" width="600px">
+        </article>
         
         <div class="projects">
-            <div>
-                <h2>Projects</h2>
+            <div class="subheading">
+                <h2>&lt;projects&gt;</h2>
+                <div class="white"></div>
+            </div>
+            <div class="projects-bar">   
                 <nav>
-                    <h3>English</h3>
-                    <h3>UX</h3>
+                    <h3 class="english">English</h3>
+                    <h3 class="web">UX</h3>
                 </nav>
             </div>
-            <div class="english">
+            <div>
                 <div class="eng-item">
                     <img src="" alt="worksheet">
                     <div>
@@ -58,7 +65,7 @@
                     </div>
                 </div>
             </div>
-            <div class="web">
+            <div>
                 <div class="web-item">
                     <img src="" alt="website">
                     <div>
