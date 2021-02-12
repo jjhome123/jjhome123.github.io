@@ -12,6 +12,7 @@ body {
     margin-left: 0;
     font-family:Arial, Helvetica, sans-serif;
     background-color: rgba(39,40,61,255);
+    color: white;
 }
 
 .logo {
@@ -83,15 +84,13 @@ li a {
 
 .banner-item h1 {
     font-size: 4em;
-    color: white;
     border-top: white 2px solid;
     border-bottom: white 2px solid;
     padding: 0.5em 0;
 }
 
-.about {
+.about, .contact {
     display: flex;
-    color:white;
     width: 90%;
     margin: 0 auto;
     margin-left: 6%;
