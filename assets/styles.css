@@ -196,3 +196,7 @@ button:focus {
     text-align: center;
     display: none;
 }
+
+.gap {
+    height: 100px;
+}
