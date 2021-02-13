@@ -204,21 +204,20 @@ button:focus {
 }
 
 .airplane {
-    margin-left: 7%;
-}
-
-.email, .linkedin {
-    text-align: right;
-}
-
-.email p {
-    margin-left: 3%;
-    font-family: "Share Tech Mono";
-    font-size: 1.7em;
+    display: flex;
+    justify-self: center;
+    align-self: center;
 }
 
 .contact {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;;
+    margin: 0 auto;
+}
+
+.contact-content .subheading {
     display: flex;
+    justify-content: center;  
 }
 
 input {
@@ -227,6 +226,20 @@ input {
     padding: 2% 2%;
     font-size: 1em;
     border-radius: 5px;
+    width: 100%;
+    background-color: rgba(99,100,146,0.9);
+}
+
+#fname, #lname {
+    width: 45%;
+}
+
+#submit {
+    background-image: rgb(18,150,203);
+    justify-self: right;
+    margin-left: 3%;
+    width: 30%;
+    color: white;
 }
 
 textarea {
@@ -236,10 +249,25 @@ textarea {
     width: 100%;
     height: 200px;
     border-radius: 10px;
+    margin-bottom: 2%;
+    background-color: rgba(99,100,146,0.9);
+}
+
+::placeholder {
+    color: white;
+}
+
+textarea:focus, input:focus {
+    color: white;
+}
+
+.icons {
+    display: flex;
+    justify-content: space-between;
 }
 
 footer {
-    position:absolute;
-    bottom:0;
-    width:100%
+    position: absolute;
+    bottom: 0;
+    width: 100%;
 }
