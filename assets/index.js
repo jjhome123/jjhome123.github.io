@@ -5,6 +5,9 @@ let englishItem = document.getElementById('eng-item');
 let webItem = document.getElementById('web-item');
 let white1 = document.getElementById('white1');
 let white2 = document.getElementById('white2');
+let menuOpen = document.getElementById('hamburger-open');
+let menuClose = document.getElementById('hamburger-close')
+let mNavMenu = document.getElementById('mobile-nav-menu');
 
 //English Tab functions//
 let viewEnglish = function() {
@@ -83,6 +86,19 @@ let white2Visible = function() {
     white2.style.opacity = 0.9;
 }
 
+//Mobile Nav Menu functions//
+let navDisplay = function() {
+    mNavMenu.style.display = "block";
+    menuOpen.style.display = "none";
+    menuClose.style.display = "block";
+}
+
+let navHide = function() {
+    mNavMenu.style.display = "none";
+    menuOpen.style.display = "block";
+    menuClose.style.display = "none";
+}
+
 //English Events//
 english.onclick = viewEnglish;
 english.onmouseenter = enterEnglishButton;
@@ -103,3 +119,7 @@ white1.onmouseenter = white1Transparent;
 white1.onmouseleave = white1Visible;
 white2.onmouseenter = white2Transparent;
 white2.onmouseleave = white2Visible;
+
+//Mobile Nav Menu Events//
+menuOpen.onclick = navDisplay;
+menuClose.onclick = navHide;

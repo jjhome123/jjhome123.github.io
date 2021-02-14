@@ -71,6 +71,52 @@ li {
     text-transform: lowercase;
 }
 
+.hamburger-open {
+    display: flex;
+    justify-content: flex-end;
+}
+
+#hamburger-open {
+    display: block;
+    margin-right:0;
+    padding: 2% 5%;
+}
+
+.hamburger-close {
+    display: flex;
+    justify-content: flex-end;
+}
+
+#hamburger-close {
+    display: none;
+    margin-right:0;
+    padding: 2% 5%;
+    justify-content: flex-end;
+    background-color: rgba(39,40,61,255);
+}
+
+.mobile-nav p {
+    font-size: 4em;
+    text-align: right;
+    padding:0.3em 0;
+    margin:0;
+    margin-right:5%;
+}
+
+.mobile-nav ul {
+    background-color: rgba(99,100,146,255);
+    margin: 0;
+    padding-right: 3%;
+    line-height: 1.5;
+    width: 40%;
+    position:absolute; 
+    text-align: right;
+    display: block;
+    right:0;
+    opacity: 0.9;
+    display: none;
+}
+
 a {
     color: white;
 }
@@ -331,6 +377,18 @@ footer {
     .skills2 ul {
         display: flex;
         flex-wrap: wrap;
+    }
+}
+
+@media only screen and (max-width: 980px) {
+    .top-nav {
+        display:none;
+    }
+}
+
+@media only screen and (min-width: 981px) {
+    .mobile-nav {
+        display: none;
     }
 }
 
