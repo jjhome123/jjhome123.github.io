@@ -1,1 +1,132 @@
-hello world
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>John Yee - Portland, Oregon</title>
+        <!-- Favicon-->
+        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="css/styles.css" rel="stylesheet" />
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
+        <script src="https://kit.fontawesome.com/7a147c64b0.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto+Mono">
+    </head>
+    <body>
+        <!-- Responsive navbar-->
+        <nav class="navbar navbar-expand-lg fixed-top bg-body-tertiary">
+            <div class="container">
+                <button class="navbar-toggler ml-auto float-xs-right hidden-sm-up" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item"><a class="nav-link " href="#about-me"><h3>About</h3></a></li>
+                        <li class="nav-item"><a class="nav-link" aria-current="page" href="#portfolio"><h3>Portfolio</h3></a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- Page content-->
+        <div class="container intro vh-100">
+            <table>
+                <tbody>
+                    <tr>
+                        <td>
+                            <div class="mt-5">
+                                <h1 id="hello">Welcome!</h1>
+                                <br>
+                                <div class="mx-4">
+                                    <h1 id="name">John Yee</h1>
+                                    <h3 id="title">Entry-Level Web & Software Developer</h3>
+                                    <h3 id="location">Kobe, Japan</h3>
+                                    <h3 class="mb-3" id="email"><a href="mailto:johnplyee@gmail.com">johnplyee@gmail.com</a></h3>
+                                    <a class="socials" href="https://github.com/jjhome123"><i class="fa-brands fa-github fa-xl"></i></a>
+                                    <a class="socials" href="https://www.linkedin.com/in/johnpyee/"><i class="fa-brands fa-linkedin fa-xl"></i></a>
+                                </div>
+                            </div>
+                        </td>
+                        <td class="text-center">
+                            <img id="profile-pic" src="assets/profile.jpg">
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            
+            <div class="down-arrow"><img id="downarrow" style="opacity: 1;" src="assets/downarrow.png"></div>
+        </div>
+        <div class="container">
+            <div class="vh-100" id="about-me">
+                <h1>About Me</h1>
+                <h3>
+                    As a developer currently working in education, I am constantly thinking about how to incorporate software
+                    into my work environment.
+                </h3>
+            </div>
+            <hr>
+            <div id="portfolio">
+                <table class="table table-borderless">
+                    <tbody>
+                        <tr class="align-middle">
+                            <td style="background-color: black; color: white;">
+                                <h1>Projects</h1>
+                            </td>
+                            <td>
+                                <table class="table table-hover">
+                                    <thead>
+                                        <th>Name</th>
+                                        <th>Description</th>
+                                        <th>Technologies</th>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>HABATAN Word Checker</td>
+                                            <td><strong>Web application</strong> that cross references each word from an inputted text with Hyogo Prefecture's Junior High School English Vocabulary Word List (more commonly known as "HABATAN"). Words that are not in the list are returned to the user along with synonyms.</td>
+                                            <td>
+                                                <ul>
+                                                    <li>HTML</li>
+                                                    <li>CSS</li>
+                                                    <li>Bootstrap</li>
+                                                    <li>Python</li>
+                                                    <li>SQLite</li>
+                                                    <li>Flask</li>
+                                                </ul>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>Grades to PDF Generator</td>
+                                            <td><strong>Python program</strong> that takes a formatted Google Sheets table containing student grades as input and outputs a PDF file of each student's earned grades in printable table format.</td>
+                                            <td>
+                                                <ul>                                                    
+                                                    <li>Python</li>
+                                                    <li>Google Sheets</li>
+                                                </ul>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>Classroom Scheduler</td>
+                                            <td><strong>Web application</strong> that allows users to reserve rooms for a particular time and day. Users can see the booking status of rooms for any day.</td>
+                                            <td>
+                                                <ul>
+                                                    <li>HTML</li>
+                                                    <li>CSS</li>
+                                                    <li>Bootstrap</li>
+                                                    <li>Python</li>
+                                                    <li>SQLite</li>
+                                                    <li>Django</li>
+                                                </ul>    
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </body>
+</html>
